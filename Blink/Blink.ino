@@ -12,11 +12,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  int lightValue = analogRead(lightSensorPin);
 
-  Serial.print("Light sensor reading");
-  Serial.println(lightValue);
 
   //turn led on when the light level is below the threshold (i.e dark)
   if (lightValue < lightThreshold ) {
