@@ -27,6 +27,6 @@ void loop() {
     digitalWrite(ledPin, LOW);// turn LED off
     Serial.println("LED is off - Its bright");
   }
-  delay(10);
+
   
 }
