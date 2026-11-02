@@ -67,11 +67,11 @@ int lightValue = analogRead(lightSensorPin);
   
   if (lightValue < lightThreshold ) {
     digitalWrite(ledPin, LOW); // turn LED off
-    Serial.println("LED is on - Its Dark");
+    Serial.println("LED is on - Fridge Closed ");
   } 
   else {
     digitalWrite(ledPin, HIGH);// turn LED on
-    Serial.println("LED is off - Its bright");
+    Serial.println("LED is off - Fridge Open ");
   }
   delay(10);
 }
